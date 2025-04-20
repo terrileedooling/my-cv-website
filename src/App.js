@@ -1,15 +1,44 @@
-
+import React, { use, useState } from 'react';
 import './App.css';
 
 function App() {
+  const [activeTab, setActiveTab] = useState('projects');
+
+  const renderTabContent = () => {
+    switch (activeTab) {
+      case 'projects':
+        return (
+          <ul>
+            <li><a href="#">To-Do App</a> – a basic task manager with React hooks</li>
+            <li><a href="#">Portfolio Website</a> – this CV site, built from scratch</li>
+            <li><a href="#">Weather App</a> – fetches real-time weather using an API</li>
+          </ul>
+        );
+      case 'education':
+        return (
+          <ul>
+            <li><a href="#">2020-2024 UCT BSc in Computer Science with co-major in Business Computing</a></li>
+            <li><a href="#">2019 Matric Certificate</a></li>
+          </ul>
+        );
+      case 'experience':
+        return (
+          <ul>
+            <li><a href="#">2024 - Present Junior Web Developer</a></li>
+          </ul>
+        );
+      default:
+        return null;
+    }
+  };
   return (
-    <div className="app">
-      <header className="hero">
-        <h1>Your Name</h1>
-        <p>Junior Developer | Web Enthusiast</p>
+    <div class="app">
+      <header class="hero">
+        <h1>Terri-Lee Dooling</h1>
+        <p>Junior Web Developer </p>
       </header>
 
-      <section className="about">
+      <section class="about">
         <h2>About Me</h2>
         <p>
           I'm a passionate developer with a strong desire to build clean and useful web experiences.
@@ -17,30 +46,51 @@ function App() {
         </p>
       </section>
 
-      <section className="skills">
+      <section class="skills">
         <h2>Skills</h2>
         <ul>
-          <li>JavaScript / React</li>
-          <li>HTML / CSS / Tailwind</li>
+          <li>JavaScript, PHP, Java, Python, C#</li>
+          <li>React, Vue.js, .NET</li>
+          <li>REST APIs, Database Design</li>
           <li>Git & GitHub</li>
           <li>REST APIs</li>
         </ul>
       </section>
 
-      <section className="projects">
-        <h2>Projects</h2>
-        <ul>
-          <li><a href="#">To-Do App</a> – a basic task manager with React hooks</li>
-          <li><a href="#">Portfolio Website</a> – this CV site, built from scratch</li>
-          <li><a href="#">Weather App</a> – fetches real-time weather using an API</li>
-        </ul>
+      <section class="tab-section">
+        <div class="tab-buttons">
+          <button
+            class={activeTab === 'projects' ? 'active' : ''}
+            onClick={() => setActiveTab('projects')}
+          >
+            Projects
+          </button>
+          <button
+            class={activeTab === 'education' ? 'active' : ''}
+            onClick={() => setActiveTab('education')}
+          >
+            Education
+          </button>
+          <button
+            class={activeTab === 'experience' ? 'active' : ''}
+            onClick={() => setActiveTab('experience')}
+          >
+            Experience
+          </button>
+        </div>
+        <div class="tab-content">
+          {renderTabContent()}
+        </div>
       </section>
 
-      <section className="contact">
+
+
+
+      <section class="contact">
         <h2>Contact</h2>
-        <p>Email: youremail@example.com</p>
+        <p>Email: terrileedooling@gmail.com</p>
         <p>
-          <a href="https://github.com/yourusername">GitHub</a> | <a href="https://linkedin.com/in/yourusername">LinkedIn</a>
+          <a href="https://github.com/terrileedooling">GitHub</a> | <a href="https://linkedin.com/in/comingsoon">LinkedIn</a>
         </p>
       </section>
     </div>

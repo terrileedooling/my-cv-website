@@ -11,6 +11,10 @@ body {
   padding: 2rem;
 }
 
+.about {
+  align-items:baseline;
+}
+
 .hero {
   text-align: center;
   margin-bottom: 2rem;
@@ -32,4 +36,33 @@ ul {
 a {
   color: #0077ff;
   text-decoration: none;
+}
+.tab-buttons {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.tab-buttons button {
+  padding: 0.5rem 1rem;
+  background-color: #e0e0e0;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: 0.3s ease;
+}
+
+.tab-buttons button.active {
+  background-color: #0077ff;
+  color: white;
+}
+
+.tab-buttons button:hover {
+  background-color: #005fcc;
+  color: white;
+}
+
+.tab-content ul {
+  list-style: none;
+  padding-left: 0;
 }
