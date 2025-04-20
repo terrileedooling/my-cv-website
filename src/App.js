@@ -1,4 +1,5 @@
 import React, { use, useState } from 'react';
+import Header from './components/header';
 import './App.css';
 
 function App() {
@@ -33,10 +34,7 @@ function App() {
   };
   return (
     <div class="app">
-      <header class="hero">
-        <h1>Terri-Lee Dooling</h1>
-        <p>Junior Web Developer </p>
-      </header>
+      <Header />
 
       <section class="about">
         <h2>About Me</h2>
@@ -77,6 +75,15 @@ function App() {
         <p>
           <a href="https://github.com/terrileedooling">GitHub</a> | <a href="https://linkedin.com/in/comingsoon">LinkedIn</a>
         </p>
+      </section>
+
+      <section class="contact-form">
+        <form className="contact-form">
+          <input type="text" placeholder="Name" required />
+          <input type="email" placeholder="Email" required />
+          <textarea placeholder="Your message..." required />
+          <button type="submit">Send</button>
+        </form>
       </section>
     </div>
   );
