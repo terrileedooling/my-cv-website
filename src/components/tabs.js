@@ -20,7 +20,7 @@ function Tabs() {
                             className="tab-item"
                             style={{ animationDelay: `${index * 0.5}s` }}
                           >
-                            <a href="#" className="text-blue-600 font-medium hover:underline">
+                            <a href="#project" className="text-blue-600 font-medium hover:underline">
                               {proj.name}
                             </a>{" "}
                             – {proj.desc}
@@ -42,7 +42,7 @@ function Tabs() {
                         className="tab-item"
                         style={{ animationDelay: `${index * 0.5}s` }}
                       >
-                        <a href="#" className="text-blue-600 font-medium hover:underline">
+                        <a href="#education" className="text-blue-600 font-medium hover:underline">
                           {edu.name}
                         </a>{" "}
                         – {edu.desc}
@@ -63,7 +63,7 @@ function Tabs() {
                         className="tab-item"
                         style={{ animationDelay: `${index * 0.5}s` }}
                       >
-                        <a href="#" className="text-blue-600 font-medium hover:underline">
+                        <a href="#experience" className="text-blue-600 font-medium hover:underline">
                           {exp.name}
                         </a>{" "}
                         – {exp.desc}
@@ -76,7 +76,7 @@ function Tabs() {
     };
 
     return (
-        <section className="tab-section">
+        <section id="tabs" className="tab-section">
           <div className="tab-buttons">
             <button
                 className={`px-4 py-2 rounded-md font-semibold transition-all duration-300 ${
