@@ -59,24 +59,9 @@ function App() {
 
       <section class="tab-section">
         <div class="tab-buttons">
-          <button
-            class={activeTab === 'projects' ? 'active' : ''}
-            onClick={() => setActiveTab('projects')}
-          >
-            Projects
-          </button>
-          <button
-            class={activeTab === 'education' ? 'active' : ''}
-            onClick={() => setActiveTab('education')}
-          >
-            Education
-          </button>
-          <button
-            class={activeTab === 'experience' ? 'active' : ''}
-            onClick={() => setActiveTab('experience')}
-          >
-            Experience
-          </button>
+          <button class={activeTab === 'projects' ? 'active' : ''} onClick={() => setActiveTab('projects')}>Projects</button>
+          <button class={activeTab === 'education' ? 'active' : ''} onClick={() => setActiveTab('education')}>Education</button>
+          <button class={activeTab === 'experience' ? 'active' : ''} onClick={() => setActiveTab('experience')}>Experience</button>
         </div>
         <div class="tab-content">
           {renderTabContent()}
