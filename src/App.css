@@ -79,6 +79,18 @@ a {
 .tab-content li:hover {
   background-color: #e0e0e0;
 }
+.tab-item {
+  opacity: 0;
+  transform: translateY(10px);
+  animation: fadeInTab 0.4s ease-out forwards;
+}
+
+@keyframes fadeInTab {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 /* Custom fade effect */
 @keyframes fade-in {
   from {

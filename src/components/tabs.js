@@ -9,28 +9,67 @@ function Tabs() {
                 className="tab-content transition-all duration-500 ease-in-out animate-fade-in"
             >
                 {activeTab === 'projects' && (
-                  <ul>
-                    <li><a href="#">To-Do App</a> – a basic task manager with React hooks</li>
-                    <li><a href="#">Portfolio Website</a> – this CV site, built from scratch</li>
-                    <li><a href="#">Weather App</a> – fetches real-time weather using an API</li>
-                  </ul>
+                    <ul>
+                        {[
+                          { name: "To-Do App", desc: "a basic task manager with React hooks" },
+                          { name: "Portfolio Website", desc: "this CV site, built from scratch" },
+                          { name: "Weather App", desc: "fetches real-time weather using an API" }
+                        ].map((proj, index) => (
+                          <li
+                            key={proj.name}
+                            className="tab-item"
+                            style={{ animationDelay: `${index * 0.5}s` }}
+                          >
+                            <a href="#" className="text-blue-600 font-medium hover:underline">
+                              {proj.name}
+                            </a>{" "}
+                            – {proj.desc}
+                          </li>
+                        ))}
+                    </ul>
                 )}
 
                 {activeTab === 'education' && (
-                  <ul>
-                    <li>2022 – Software Development Diploma – ABC College</li>
-                    <li>2020 – Matric Certificate – XYZ High School</li>
-                    <li><a href="#">2020-2024 UCT BSc in Computer Science with co-major in Business Computing</a></li>
-                    <li><a href="#">2019 Matric Certificate</a></li>
-                  </ul>
+                    
+                    <ul>
+                    {[
+                      { name: "UCT BSc in Computer Science with co-major in Business Computing", desc: "2020-2024" },
+                      { name: "Matric Certificate", desc: "Fish Hoek 2019" },
+                      { name: "Weather App", desc: "fetches real-time weather using an API" }
+                    ].map((edu, index) => (
+                      <li
+                        key={edu.name}
+                        className="tab-item"
+                        style={{ animationDelay: `${index * 0.5}s` }}
+                      >
+                        <a href="#" className="text-blue-600 font-medium hover:underline">
+                          {edu.name}
+                        </a>{" "}
+                        – {edu.desc}
+                      </li>
+                    ))}
+                    </ul>
                 )}
 
                 {activeTab === 'experience' && (
-                  <ul>
-                    <li><a href="#">2024 - Present Junior Web Developer</a></li>
-                    <li>2025 – Present: Junior Developer at Great Company</li>
-                    <li>2024 – Internship at Coding Bootcamp</li>
-                  </ul>
+                    <ul>
+                    {[
+                      { name: "Present Junior Web Developer", desc: "2024 - Present" },
+                      { name: "Matric Certificate", desc: "Fish Hoek 2019" },
+                      { name: "Weather App", desc: "fetches real-time weather using an API" }
+                    ].map((exp, index) => (
+                      <li
+                        key={exp.name}
+                        className="tab-item"
+                        style={{ animationDelay: `${index * 0.5}s` }}
+                      >
+                        <a href="#" className="text-blue-600 font-medium hover:underline">
+                          {exp.name}
+                        </a>{" "}
+                        – {exp.desc}
+                      </li>
+                    ))}
+                    </ul>
                 )}
             </div>
         );
@@ -61,11 +100,11 @@ function Tabs() {
             </button>
             <button
                 className={`px-4 py-2 rounded-md font-semibold transition-all duration-300 ${
-                activeTab === "Experience"
+                activeTab === "experience"
                 ? "bg-blue-600 text-white shadow-md"
                 : "bg-gray-100 text-gray-700 hover:bg-blue-100 hover:scale-105"
                 }`}
-                onClick={() => setActiveTab("Experience")}
+                onClick={() => setActiveTab("experience")}
             >
                 Experience
             </button>
