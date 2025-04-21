@@ -1,6 +1,5 @@
 import React from 'react';
 import Hero from './components/hero';
-import Header from './components/header';
 import About from './components/about';
 import Skills from './components/skills';
 import Tabs from './components/tabs';
@@ -11,7 +10,7 @@ function App() {
   return (
     <div class="app">
       <Hero />
-      <Header />
+      {/* <Header /> */}
       <About />
       <Skills />
       <Tabs />

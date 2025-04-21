@@ -6,7 +6,8 @@ const Hero = () => {
         <>
             <style>{`
                 .hero-section {
-                    max-width: 100%;
+                    padding: 1rem 3rem;
+                    width: 100%;
                     background: linear-gradient(to bottom right, #fdfbfb, #ebedee);
                     display: flex;
                     justify-content: center;
@@ -15,21 +16,23 @@ const Hero = () => {
                 }
 
                 .hero-content {
+                    padding: 3rem;
                     display: flex;
                     align-items: center;
-                    gap: 3rem;
+                    gap: 1rem;
                     flex-wrap: wrap;
-                    max-width: 1000px;
+                    width: 100%;
                     animation: slideFadeIn 1s ease-in-out forwards;
+                    
                 }
 
                 .hero-text {
                     flex: 1;
-                    min-width: 280px;
+                    min-width: 50%;
                 }
 
                 .hero-text h1 {
-                    font-size: 3rem;
+                    font-size: 3.5rem;
                     font-weight: 800;
                     color: #111;
                     margin-bottom: 1rem;
@@ -44,6 +47,7 @@ const Hero = () => {
                 }
 
                 .hero-image {
+                    padding: 2rem;
                     flex: 1;
                     display: flex;
                     justify-content: center;
@@ -51,8 +55,8 @@ const Hero = () => {
                 }
 
                 .hero-image img {
-                    width: 300px;
-                    height: 300px;
+                    width: 400px;
+                    height: 400px;
                     border-radius: 50%;
                     object-fit: cover;
                     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
@@ -61,6 +65,11 @@ const Hero = () => {
 
                 .hero-image img:hover {
                     transform: scale(1.05);
+                }
+                
+                .highlight-name {
+                    color: #EB4B98;
+                    font-weight: 800;
                 }
 
                 @keyframes fadeIn {
@@ -110,7 +119,7 @@ const Hero = () => {
             <section className="hero-section">
                 <div className="hero-content">
                     <div className="hero-text">
-                    <h1>Hi, I'm Terri-Lee Dooling</h1>
+                    <h1>Hi, I'm <span className="highlight-name">Terri-Lee Dooling</span></h1>
                         <p className="tagline">
                             Junior Dev with Senior Dreams and Infinite Tabs Open.
                         </p>
