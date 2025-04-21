@@ -1,24 +1,25 @@
 {
   "files": {
-    "main.css": "/my-cv-website/static/css/main.4ce57e64.chunk.css",
-    "main.js": "/my-cv-website/static/js/main.4d5e7ea0.chunk.js",
-    "main.js.map": "/my-cv-website/static/js/main.4d5e7ea0.chunk.js.map",
-    "runtime-main.js": "/my-cv-website/static/js/runtime-main.a67d3cc2.js",
-    "runtime-main.js.map": "/my-cv-website/static/js/runtime-main.a67d3cc2.js.map",
+    "main.css": "/my-cv-website/static/css/main.2cd8614a.chunk.css",
+    "main.js": "/my-cv-website/static/js/main.5b6b0cfd.chunk.js",
+    "main.js.map": "/my-cv-website/static/js/main.5b6b0cfd.chunk.js.map",
+    "runtime-main.js": "/my-cv-website/static/js/runtime-main.a00c3059.js",
+    "runtime-main.js.map": "/my-cv-website/static/js/runtime-main.a00c3059.js.map",
     "static/js/2.15226794.chunk.js": "/my-cv-website/static/js/2.15226794.chunk.js",
     "static/js/2.15226794.chunk.js.map": "/my-cv-website/static/js/2.15226794.chunk.js.map",
-    "static/js/3.a2d127c1.chunk.js": "/my-cv-website/static/js/3.a2d127c1.chunk.js",
-    "static/js/3.a2d127c1.chunk.js.map": "/my-cv-website/static/js/3.a2d127c1.chunk.js.map",
+    "static/js/3.58feb327.chunk.js": "/my-cv-website/static/js/3.58feb327.chunk.js",
+    "static/js/3.58feb327.chunk.js.map": "/my-cv-website/static/js/3.58feb327.chunk.js.map",
     "index.html": "/my-cv-website/index.html",
-    "precache-manifest.fce3d6cfeca74812c9358a92704f8bd0.js": "/my-cv-website/precache-manifest.fce3d6cfeca74812c9358a92704f8bd0.js",
+    "precache-manifest.03b0a33d98c57b980c1aefe9655f48e0.js": "/my-cv-website/precache-manifest.03b0a33d98c57b980c1aefe9655f48e0.js",
     "service-worker.js": "/my-cv-website/service-worker.js",
-    "static/css/main.4ce57e64.chunk.css.map": "/my-cv-website/static/css/main.4ce57e64.chunk.css.map",
-    "static/js/2.15226794.chunk.js.LICENSE.txt": "/my-cv-website/static/js/2.15226794.chunk.js.LICENSE.txt"
+    "static/css/main.2cd8614a.chunk.css.map": "/my-cv-website/static/css/main.2cd8614a.chunk.css.map",
+    "static/js/2.15226794.chunk.js.LICENSE.txt": "/my-cv-website/static/js/2.15226794.chunk.js.LICENSE.txt",
+    "static/media/profile-photo.jpg": "/my-cv-website/static/media/profile-photo.87c44304.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.a67d3cc2.js",
+    "static/js/runtime-main.a00c3059.js",
     "static/js/2.15226794.chunk.js",
-    "static/css/main.4ce57e64.chunk.css",
-    "static/js/main.4d5e7ea0.chunk.js"
+    "static/css/main.2cd8614a.chunk.css",
+    "static/js/main.5b6b0cfd.chunk.js"
   ]
 }
