@@ -8,14 +8,14 @@ import './App.css';
 function App() {
   
   return (
-    <div class="app">
+    <div className="app">
       <Hero />
       {/* <Header /> */}
       <About />
       <Skills />
       <Tabs />
 
-      <section class="contact animate-bounce-scale">
+      <section className="contact animate-bounce-scale">
         <h2>Contact</h2>
         <p>Email: terrileedooling@gmail.com</p>
         <p>
@@ -23,7 +23,7 @@ function App() {
         </p>
       </section>
 
-      <section class="contact-form animate-bounce-scale">
+      <section className="contact-form animate-bounce-scale">
         <form className="contact-form">
           <input type="text" placeholder="Name" required />
           <input type="email" placeholder="Email" required />

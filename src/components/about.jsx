@@ -3,7 +3,7 @@ import React from "react";
 
 function About() {
     return (
-        <section class="about animate-bounce-scale">
+        <section className="about animate-bounce-scale">
         <h2>About Me</h2>
         <p>
           I'm a passionate developer with a strong desire to build clean and useful web experiences.
