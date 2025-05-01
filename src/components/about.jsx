@@ -1,5 +1,6 @@
 import React from "react";
 
+
 function About() {
     return (
         <section class="about animate-bounce-scale">
