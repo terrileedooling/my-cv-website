@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { FaBriefcase, FaCode, FaGraduationCap } from "react-icons/fa";
 
 function Tabs() {
     const [activeTab, setActiveTab] = useState('projects');
@@ -35,7 +36,6 @@ function Tabs() {
                     {[
                       { name: "UCT BSc in Computer Science with co-major in Business Computing", desc: "2020-2024" },
                       { name: "Matric Certificate", desc: "Fish Hoek 2019" },
-                      { name: "Weather App", desc: "fetches real-time weather using an API" }
                     ].map((edu, index) => (
                       <li
                         key={edu.name}
@@ -55,8 +55,6 @@ function Tabs() {
                     <ul>
                     {[
                       { name: "Present Junior Web Developer", desc: "2024 - Present" },
-                      { name: "Matric Certificate", desc: "Fish Hoek 2019" },
-                      { name: "Weather App", desc: "fetches real-time weather using an API" }
                     ].map((exp, index) => (
                       <li
                         key={exp.name}
@@ -79,34 +77,25 @@ function Tabs() {
         <section id="tabs" className="tab-section">
           <div className="tab-buttons">
             <button
-                className={`px-4 py-2 rounded-md font-semibold transition-all duration-300 ${
-                activeTab === "projects"
-                ? "bg-blue-600 text-white shadow-md"
-                : "bg-gray-100 text-gray-700 hover:bg-blue-100 hover:scale-105"
-                }`}
-                onClick={() => setActiveTab("projects")}
+              className={`tab-button ${activeTab === "projects" ? "active" : ""}`}
+              onClick={() => setActiveTab("projects")}
             >
-                Projects
+              <FaCode /> 
+              Projects
             </button>
             <button
-                className={`px-4 py-2 rounded-md font-semibold transition-all duration-300 ${
-                activeTab === "education"
-                ? "bg-blue-600 text-white shadow-md"
-                : "bg-gray-100 text-gray-700 hover:bg-blue-100 hover:scale-105"
-                }`}
-                onClick={() => setActiveTab("education")}
+              className={`tab-button ${activeTab === "education" ? "active" : ""}`}
+              onClick={() => setActiveTab("education")}
             >
-                Education
+              <FaGraduationCap /> 
+              Education
             </button>
             <button
-                className={`px-4 py-2 rounded-md font-semibold transition-all duration-300 ${
-                activeTab === "experience"
-                ? "bg-blue-600 text-white shadow-md"
-                : "bg-gray-100 text-gray-700 hover:bg-blue-100 hover:scale-105"
-                }`}
-                onClick={() => setActiveTab("experience")}
+              className={`tab-button ${activeTab === "experience" ? "active" : ""}`}
+              onClick={() => setActiveTab("experience")}
             >
-                Experience
+              <FaBriefcase /> 
+              Experience
             </button>
           </div>
             <h2>{activeTab.charAt(0).toUpperCase() + activeTab.slice(1)}</h2>

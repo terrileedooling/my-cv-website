@@ -4,19 +4,19 @@ import About from './components/about';
 import Skills from './components/skills';
 import Tabs from './components/tabs';
 import './App.css';
+import { FaLink, FaPhone, FaEnvelope } from "react-icons/fa"
 
 function App() {
   
   return (
     <div className="app">
       <Hero />
-      {/* <Header /> */}
       <About />
       <Skills />
       <Tabs />
 
       <section className="contact animate-bounce-scale">
-        <h2>Contact</h2>
+        <h2> < FaPhone /> Contact</h2>
         <p>Email: terrileedooling@gmail.com</p>
         <p>
           <a href="https://github.com/terrileedooling">GitHub</a> | <a href="https://linkedin.com/in/comingsoon">LinkedIn</a>

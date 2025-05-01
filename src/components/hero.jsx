@@ -41,7 +41,7 @@ const Hero = () => {
 
                 .tagline {
                     font-size: 1.3rem;
-                    color: #555;
+                    color: #222;
                     line-height: 1.6;
                     animation: fadeIn 1.4s ease forwards;
                 }
@@ -107,6 +107,7 @@ const Hero = () => {
 
                     .tagline {
                         font-size: 1.1rem;
+                        
                     }
 
                     .hero-image img {

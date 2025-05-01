@@ -1,5 +1,5 @@
 import React from "react";
-import { FaJs, FaPhp, FaJava, FaPython, FaReact, FaVuejs, FaGitAlt, FaCode } from "react-icons/fa";
+import { FaBrain, FaJs, FaPhp, FaJava, FaPython, FaReact, FaVuejs, FaGitAlt, FaCode } from "react-icons/fa";
 import { SiDotnet, SiPostman, SiMysql, SiGithub } from "react-icons/si";
 
 function Skills() {
@@ -7,9 +7,9 @@ function Skills() {
     {
         title: "Languages",
         skills: [
-          { name: "JavaScript", icon: <FaJs className="js-icon" /> },
           { name: "PHP", icon: <FaPhp className="php-icon" /> },
           { name: "Java", icon: <FaJava className="java-icon" /> },
+          { name: "JavaScript", icon: <FaJs className="js-icon" /> },
           { name: "Python", icon: <FaPython className="python-icon" /> },
           { name: "C#", icon: <FaCode className="csharp-icon" /> },
         ],
@@ -35,7 +35,7 @@ function Skills() {
 
   return (
     <section className="skills">
-      <h2>Skills</h2>
+      <h2> < FaBrain /> Skills</h2>
       {skillCategories.map((category, idx) => (
         <div key={idx} className="skill-category">
           <h3>{category.title}</h3>
