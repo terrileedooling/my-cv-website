@@ -12,9 +12,9 @@ function Tabs() {
                 {activeTab === 'projects' && (
                     <ul>
                         {[
-                          { name: "To-Do App", desc: "a basic task manager with React hooks" },
-                          { name: "Portfolio Website", desc: "this CV site, built from scratch" },
-                          { name: "Weather App", desc: "fetches real-time weather using an API" }
+                          // { name: "To-Do App", desc: "a basic task manager with React hooks" },
+                          // { name: "Portfolio Website", desc: "this CV site, built from scratch" },
+                          // { name: "Weather App", desc: "fetches real-time weather using an API" }
                         ].map((proj, index) => (
                           <li
                             key={proj.name}
@@ -76,14 +76,7 @@ function Tabs() {
     return (
         <section id="tabs" className="tab-section">
           <div className="tab-buttons">
-            <button
-              className={`tab-button ${activeTab === "projects" ? "active" : ""}`}
-              onClick={() => setActiveTab("projects")}
-            >
-              <FaCode /> 
-              Projects
-            </button>
-            <button
+          <button
               className={`tab-button ${activeTab === "education" ? "active" : ""}`}
               onClick={() => setActiveTab("education")}
             >
@@ -96,6 +89,13 @@ function Tabs() {
             >
               <FaBriefcase /> 
               Experience
+            </button>
+            <button
+              className={`tab-button ${activeTab === "projects" ? "active" : ""}`}
+              onClick={() => setActiveTab("projects")}
+            >
+              <FaCode /> 
+              Projects
             </button>
           </div>
             <h2>{activeTab.charAt(0).toUpperCase() + activeTab.slice(1)}</h2>

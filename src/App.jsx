@@ -19,18 +19,18 @@ function App() {
         <h2> < FaPhone /> Contact</h2>
         <p>Email: terrileedooling@gmail.com</p>
         <p>
-          <a href="https://github.com/terrileedooling">GitHub</a> | <a href="https://linkedin.com/in/comingsoon">LinkedIn</a>
+          <a href="https://github.com/terrileedooling">GitHub</a> | <a href="https://www.linkedin.com/in/terri-lee-d-0b6700236/">LinkedIn</a>
         </p>
       </section>
 
-      <section className="contact-form animate-bounce-scale">
+      {/* <section className="contact-form animate-bounce-scale">
         <form className="contact-form">
           <input type="text" placeholder="Name" required />
           <input type="email" placeholder="Email" required />
           <textarea placeholder="Your message..." required />
           <button type="submit">Send</button>
         </form>
-      </section>
+      </section> */}
     </div>
   );
 }
