@@ -5,11 +5,16 @@ function ContactForm() {
     const [state, handleSubmit] = useForm(import.meta.env.VITE_FORMSPREE_FORM_ID);
 
     if (state.succeeded) {
-        return <p>Thank you for contacting me.</p>
+        return (
+            <div className="contact-form animate-bounce-scale">
+                <h2>Thank you!</h2>
+                <p>Your email has been sent.</p>
+            </div>
+        );
     }
 
     return (
-        <form action={import.meta.env.VITE_FORMSPREE_URL} method="POST" className="contact-form animate-bounce-scale">
+        <form onSubmit={handleSubmit} className="contact-form animate-bounce-scale">
             <div className="form-input">
                 <label htmlFor="name">
                     Name

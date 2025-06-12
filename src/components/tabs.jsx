@@ -12,8 +12,9 @@ function Tabs() {
                 {activeTab === 'projects' && (
                     <ul>
                         {[
+                          { name: "Sales Tracker", desc: "A basic sales calculator for tracking payments throughout the day. Results can be downloaded", url:"https://terrileedooling.github.io/salon-sales-tracking/"},
                           // { name: "To-Do App", desc: "a basic task manager with React hooks" },
-                          // { name: "Portfolio Website", desc: "this CV site, built from scratch" },
+                          { name: "Portfolio Website", desc: "this CV site, built from scratch", url:"https://terrileedooling.github.io/my-cv-website/" },
                           // { name: "Weather App", desc: "fetches real-time weather using an API" }
                         ].map((proj, index) => (
                           <li
@@ -21,7 +22,7 @@ function Tabs() {
                             className="tab-item"
                             style={{ animationDelay: `${index * 0.5}s` }}
                           >
-                            <a href="#project" className="text-blue-600 font-medium hover:underline">
+                            <a href={proj.url} className="text-blue-600 font-medium hover:underline">
                               {proj.name}
                             </a>{" "}
                             – {proj.desc}
@@ -76,7 +77,14 @@ function Tabs() {
     return (
         <section id="tabs" className="tab-section">
           <div className="tab-buttons">
-          <button
+            <button
+              className={`tab-button ${activeTab === "projects" ? "active" : ""}`}
+              onClick={() => setActiveTab("projects")}
+            >
+              <FaCode /> 
+              Projects
+            </button>
+            <button
               className={`tab-button ${activeTab === "education" ? "active" : ""}`}
               onClick={() => setActiveTab("education")}
             >
@@ -90,16 +98,9 @@ function Tabs() {
               <FaBriefcase /> 
               Experience
             </button>
-            <button
-              className={`tab-button ${activeTab === "projects" ? "active" : ""}`}
-              onClick={() => setActiveTab("projects")}
-            >
-              <FaCode /> 
-              Projects
-            </button>
           </div>
-            <h2>{activeTab.charAt(0).toUpperCase() + activeTab.slice(1)}</h2>
-            {renderTabContent()}
+          <h2>{activeTab.charAt(0).toUpperCase() + activeTab.slice(1)}</h2>
+          {renderTabContent()}
         </section>
       );
 }
