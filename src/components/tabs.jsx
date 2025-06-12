@@ -12,9 +12,9 @@ function Tabs() {
                 {activeTab === 'projects' && (
                     <ul>
                         {[
-                          { name: "Sales Tracker", desc: "A basic sales calculator for tracking payments throughout the day. Results can be downloaded", url:"https://terrileedooling.github.io/salon-sales-tracking/"},
+                          { name: "Sales Tracker", desc: "A basic sales calculator for tracking payments throughout the day. ", url:"https://terrileedooling.github.io/salon-sales-tracking/"},
                           // { name: "To-Do App", desc: "a basic task manager with React hooks" },
-                          { name: "Portfolio Website", desc: "this CV site, built from scratch", url:"https://terrileedooling.github.io/my-cv-website/" },
+                          { name: "Portfolio Website", desc: "This CV website", url:"https://terrileedooling.github.io/my-cv-website/" },
                           // { name: "Weather App", desc: "fetches real-time weather using an API" }
                         ].map((proj, index) => (
                           <li
