@@ -3,6 +3,7 @@ import Hero from './components/hero';
 import About from './components/about';
 import Skills from './components/skills';
 import Tabs from './components/tabs';
+import ContactForm from './components/contact';
 import './App.css';
 import { FaLink, FaPhone, FaEnvelope } from "react-icons/fa"
 
@@ -14,6 +15,7 @@ function App() {
       <About />
       <Skills />
       <Tabs />
+      <ContactForm />
 
       <section className="contact animate-bounce-scale">
         <h2> < FaPhone /> Contact</h2>

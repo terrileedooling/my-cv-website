@@ -1,6 +1,7 @@
 import React from "react";
 import { FaBrain, FaJs, FaPhp, FaJava, FaPython, FaReact, FaVuejs, FaGitAlt, FaCode } from "react-icons/fa";
 import { SiDotnet, SiPostman, SiMysql, SiGithub } from "react-icons/si";
+import { FaCubes } from "react-icons/fa";
 
 function Skills() {
   const skillCategories = [
@@ -19,7 +20,7 @@ function Skills() {
         skills: [
           { name: "React", icon: <FaReact className="react-icon" /> },
           { name: "Vue.js", icon: <FaVuejs className="vue-icon" /> },
-          { name: ".NET", icon: <SiDotnet className="dotnet-icon" /> },
+          { name: ".NET", icon: <FaCubes className="dotnet-icon" />},
         ],
       },
       {
