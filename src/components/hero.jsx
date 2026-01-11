@@ -1,136 +1,47 @@
 import React from "react";
+import { FaArrowDown } from "react-icons/fa";
 import profilePhoto from "../assets/profile-photo.png";
 
 const Hero = () => {
     return (
-        <>
-            <style>{`
-                .hero-section {
-                    padding: 1rem 3rem;
-                    width: 100%;
-                    background: linear-gradient(to bottom right, #fdfbfb, #ebedee);
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    min-height: 50vh;
-                }
-
-                .hero-content {
-                    padding: 3rem;
-                    display: flex;
-                    align-items: center;
-                    gap: 1rem;
-                    flex-wrap: wrap;
-                    width: 100%;
-                    animation: slideFadeIn 1s ease-in-out forwards;
-                    
-                }
-
-                .hero-text {
-                    flex: 1;
-                    min-width: 50%;
-                }
-
-                .hero-text h1 {
-                    font-size: 3.5rem;
-                    font-weight: 800;
-                    color: #111;
-                    margin-bottom: 1rem;
-                    animation: fadeIn 1.2s ease forwards;
-                }
-
-                .tagline {
-                    font-size: 1.3rem;
-                    color: #222;
-                    line-height: 1.6;
-                    animation: fadeIn 1.4s ease forwards;
-                }
-
-                .hero-image {
-                    padding: 2rem;
-                    flex: 1;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                }
-
-                .hero-image img {
-                    width: 400px;
-                    height: 400px;
-                    border-radius: 50%;
-                    object-fit: cover;
-                    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
-                    transition: transform 0.3s ease;
-                }
-
-                .hero-image img:hover {
-                    transform: scale(1.05);
-                }
-                
-                .highlight-name {
-                    color: #EB4B98;
-                    font-weight: 800;
-                }
-
-                @keyframes fadeIn {
-                    0% {
-                        opacity: 0;
-                        transform: translateY(20px);
-                    }
-                    100% {
-                        opacity: 1;
-                        transform: translateY(0);
-                    }
-                }
-
-                @keyframes slideFadeIn {
-                    0% {
-                        opacity: 0;
-                        transform: translateX(-30px);
-                    }
-                    100% {
-                        opacity: 1;
-                        transform: translateX(0);
-                    }
-                }
-
-                @media (max-width: 768px) {
-                    .hero-content {
-                        flex-direction: column-reverse;
-                        text-align: center;
-                        gap: 2rem;
-                    }
-
-                    .hero-text h1 {
-                        font-size: 2.4rem;
-                    }
-
-                    .tagline {
-                        font-size: 1.1rem;
-                        
-                    }
-
-                    .hero-image img {
-                        width: 200px;
-                        height: 200px;
-                    }
-                }
-            `}</style>
-
-            <section className="hero-section">
+        <section className="hero-section">
+            <div className="hero-container">
                 <div className="hero-content">
                     <div className="hero-text">
-                    <h1>Hi, I'm <span className="highlight-name">Terri-Lee Dooling</span></h1>
-                        <p className="tagline">
-                            Mid Developer with Senior Dreams and Infinite Tabs Open.
+                        <h1 className="hero-title">
+                            Hi, I'm <span className="highlight-name">Terri-Lee Dooling</span>
+                        </h1>
+                        <p className="hero-subtitle">
+                            Intermediate Developer · Full-Stack · Passionate about Clean Code & Modern Solutions
                         </p>
+                        <p className="hero-tagline">
+                            Intermediate developer with Senior Dreams and Infinite Tabs Open.
+                        </p>
+                        <a href="#about" className="hero-cta">
+                            Explore My Work <FaArrowDown className="cta-icon" />
+                        </a>
                     </div>
+                    
                     <div className="hero-image">
-                        <img src={profilePhoto} alt="Terri-Lee Dooling" />
+                        <div className="image-wrapper">
+                            <img 
+                                src={profilePhoto} 
+                                alt="Terri-Lee Dooling" 
+                                className="profile-photo"
+                            />
+                            <div className="image-decoration"></div>
+                        </div>
                     </div>
                 </div>
-            </section>
-        </>
+                
+                <div className="hero-scroll-indicator">
+                    <a href="#about" className="scroll-down">
+                        <span>Scroll down</span>
+                        <FaArrowDown className="scroll-icon" />
+                    </a>
+                </div>
+            </div>
+        </section>
     );
 };
 
