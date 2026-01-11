@@ -63,7 +63,7 @@ function Tabs() {
                 {activeTab === 'experience' && (
                     <ul>
                     {[
-                      { name: "Present Mid Web Developer", desc: "2024 - Present \n\n In my current role as a Mid Developer, I work across the full development lifecycle, from scoping and planning tasks and projects to implementing and maintaining backend and frontend solutions. My primary focus is backend development, where I design and build robust API endpoints with full CRUD functionality, manage database structures and business logic, and ensure system reliability, performance, and scalability. I also contribute to frontend development when required, integrating with third-party and internal APIs to deliver a seamless and intuitive user experience. My responsibilities include drafting technical proposals, designing system and process diagrams, providing general IT support, and reviewing and supporting teammates’ work. I regularly take ownership of projects, collaborate with cross-functional teams to deliver solutions, and work independently to implement high-quality, production-ready features in a fast-paced environment. This role has strengthened my technical expertise, problem-solving abilities, and capacity to manage multiple responsibilities while maintaining attention to detail."
+                      { name: "FutureRent - Mid Web Developer (2024 - Present)", desc: "\n\n In my current role as a Mid Developer, I work across the full development lifecycle, from scoping and planning tasks and projects to implementing and maintaining backend and frontend solutions. My primary focus is backend development, where I design and build robust API endpoints with full CRUD functionality, manage database structures and business logic, and ensure system reliability, performance, and scalability. I also contribute to frontend development when required, integrating with third-party and internal APIs to deliver a seamless and intuitive user experience. My responsibilities include drafting technical proposals, designing system and process diagrams, providing general IT support, and reviewing and supporting teammates’ work. I regularly take ownership of projects, collaborate with cross-functional teams to deliver solutions, and work independently to implement high-quality, production-ready features in a fast-paced environment. This role has strengthened my technical expertise, problem-solving abilities, and capacity to manage multiple responsibilities while maintaining attention to detail."
                       },
                     ].map((exp, index) => (
                       <li
@@ -74,7 +74,7 @@ function Tabs() {
                         <a href="#experience" className="text-blue-600 font-medium hover:underline">
                           {exp.name}
                         </a>{" "}
-                        – {exp.desc}
+                        : {exp.desc}
                       </li>
                     ))}
                     </ul>
