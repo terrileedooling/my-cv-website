@@ -7,8 +7,9 @@ function About() {
         <section className="about animate-bounce-scale">
         <h2> < FaPenNib /> About Me</h2>
         <p>
-          I'm a passionate developer with a strong desire to build clean and useful web experiences.
-          Currently working as a Junior Developer and leveling up daily.
+          Passionate web developer with a strong focus on clean, 
+          maintainable code and useful web experiences. 
+          Now working as a Mid-level Developer and continuously pushing to build better, smarter solutions.
         </p>
       </section>
     );

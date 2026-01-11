@@ -122,7 +122,7 @@ const Hero = () => {
                     <div className="hero-text">
                     <h1>Hi, I'm <span className="highlight-name">Terri-Lee Dooling</span></h1>
                         <p className="tagline">
-                            Junior Developer with Senior Dreams and Infinite Tabs Open.
+                            Mid Developer with Senior Dreams and Infinite Tabs Open.
                         </p>
                     </div>
                     <div className="hero-image">
