@@ -5,24 +5,48 @@ import Skills from './components/skills';
 import Tabs from './components/tabs';
 import ContactForm from './components/contact';
 import './App.css';
-import { FaLink, FaPhone, FaEnvelope } from "react-icons/fa"
+import { FaGithub, FaLinkedin, FaEnvelope, FaPhone } from "react-icons/fa";
 
 function App() {
-  
   return (
     <div className="app">
       <Hero />
-      <About />
-      <Skills />
-      <Tabs />
-      <section className="contact animate-bounce-scale">
-        <h2> < FaPhone /> Contact</h2>
-        <p>Email: terrileedooling@gmail.com</p>
-        <p>
-          <a href="https://github.com/terrileedooling">GitHub</a> | <a href="https://www.linkedin.com/in/terri-lee-d-0b6700236/">LinkedIn</a>
-        </p>
-      </section>
-      <ContactForm />
+      
+      <div className="container">
+        <About />
+        <Skills />
+        <Tabs />
+        
+        <section className="contact-info-section">
+          <div className="contact-info-card">
+            <h2 className="contact-title">
+              <FaPhone className="contact-icon" /> Get In Touch
+            </h2>
+            <div className="contact-details">
+              <a href="mailto:terrileedooling@gmail.com" className="contact-item">
+                <FaEnvelope className="icon" />
+                <span>terrileedooling@gmail.com</span>
+              </a>
+              <div className="social-links">
+                <a href="https://github.com/terrileedooling" className="social-link">
+                  <FaGithub className="icon" />
+                  <span>GitHub</span>
+                </a>
+                <a href="https://www.linkedin.com/in/terri-lee-d-0b6700236/" className="social-link">
+                  <FaLinkedin className="icon" />
+                  <span>LinkedIn</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+        <ContactForm />
+      </div>
+      
+      <footer className="footer">
+        <p>© {new Date().getFullYear()} Terri-Lee Dooling. All rights reserved.</p>
+      </footer>
     </div>
   );
 }

@@ -2,7 +2,7 @@ import React from 'react';
 
 function Header() {
     return (
-        <header class="hero animate-bounce-scale ">
+        <header class="hero animate-fade-up ">
             <h1>Terri-Lee Dooling</h1>
             <p>Junior Web Developer</p>
         </header>
