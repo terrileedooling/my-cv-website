@@ -20,7 +20,9 @@ import {
   SiGithub,
   SiTailwindcss,
   SiFirebase,
-  SiVite 
+  SiVite,
+  SiNodedotjs,
+  SiDocker
 } from "react-icons/si";
 
 function Skills() {
@@ -43,7 +45,7 @@ function Skills() {
         { name: "React", icon: <FaReact />, color: "#61DAFB" },
         { name: "Vue.js", icon: <FaVuejs />, color: "#42B883" },
         { name: ".NET", icon: <SiDotnet />, color: "#512BD4" },
-        { name: "Tailwind CSS", icon: <SiTailwindcss />, color: "#06B6D4" },
+        // { name: "Tailwind CSS", icon: <SiTailwindcss />, color: "#06B6D4" },
         { name: "Vite", icon: <SiVite />, color: "#646CFF" },
       ],
     },
@@ -51,6 +53,8 @@ function Skills() {
       title: "Backend & Databases",
       icon: <FaServer className="category-icon" />,
       skills: [
+        { name: "Node.js", icon: <SiNodedotjs />, color: "#339933" },
+        { name: "Knex.js", icon: <FaDatabase />, color: "#D26B38"},
         { name: "Firebase", icon: <SiFirebase />, color: "#FFCA28" },
         { name: "MySQL", icon: <SiMysql />, color: "#4479A1" },
         { name: "REST APIs", icon: <FaCode />, color: "#FF6B6B" },
@@ -64,7 +68,7 @@ function Skills() {
         { name: "Git", icon: <FaGitAlt />, color: "#F05032" },
         { name: "GitHub", icon: <SiGithub />, color: "#181717" },
         { name: "Postman", icon: <SiPostman />, color: "#FF6C37" },
-        { name: "Vite", icon: <SiVite />, color: "#646CFF" },
+        { name: "Docker", icon: <SiDocker />, color: "#2496ED" },
       ],
     },
   ];

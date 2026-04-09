@@ -13,9 +13,9 @@ function Tabs() {
         },
         {
             name: "E-commerce Website",
-            desc: "A full-stack e-commerce web application built for a local business selling hair, beauty, and wellness products. The platform includes an admin login with product management capabilities and is currently in a late stage of development, running in a sandbox environment.",
+            desc: "A full-stack e-commerce web application built for a local business selling hair, beauty, and wellness products. The platform includes an admin login with product management capabilities and is currently in development, running in a sandbox environment.",
             credentials: null,
-            url: "https://terrileedooling.github.io/beleza-website/"
+            url: "https://beleza-store.web.app/"
         },
         { 
             name: "Sales Calculator", 
@@ -122,6 +122,7 @@ function Tabs() {
                                 <p className="experience-description">{item.desc}</p>
                                 <div className="experience-skills">
                                     <span>Backend Development</span>
+                                    <span>Frontend Development</span>
                                     <span>API Design</span>
                                     <span>Full-Stack</span>
                                     <span>System Architecture</span>
